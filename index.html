@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Nishat Samanta Progga">
+    <meta name="description" content="">
+    <meta name="keywords" content="web developer, web, developer, front-end, html, css, javascript, react, sql">
+    <title>Cookie Settings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styles/index.css">
+</head>
+<body>
+  <div class="banner">
+    <div class="banner-content">
+      <p>A <span class="purple">cookie</span> is a small piece of text sent to your browser by a website you visit. It helps the site remember <span class="orange">information</span> about your visit, which can make it easier to visit the site again and make the site more <span class="green">useful</span> to you.</p>
+    </div>
+  </div>
+  <div id="cookieSettingsModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class = "cookie-settings-modal-content">
+        <h2>Cookie Settings</h2>
+        <p>We use cookies to improve your experience on our website. By clicking "Accept all", you agree to the use of all cookies. You can also choose which cookies to accept by clicking "Settings".</p>
+        <div class="cookie-settings-buttons">
+          <button id="acceptAllButton" class="button">Accept all</button>
+          <button id="settingsButton" class="button">Settings</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cookie preferences modal -->
+  <div id="cookiePreferencesModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="cookie-preferences-modal-content">
+        <h2 class="cookie-preferences-heading">Cookie Preferences</h2>
+        <div class="toggle-switch-container">
+          <div class="toggle-switch-item">
+            <div class="toggle-switch-label">Browser</div>
+            <div class="toggle-switch">
+              <input type="checkbox" id="browserCheckbox" checked>
+              <label class="toggle-slider round" for="browserCheckbox"></label>
+            </div>
+          </div>
+          <div class="toggle-switch-item">
+            <div class="toggle-switch-label">Operating System</div>
+            <div class="toggle-switch">
+              <input type="checkbox" id="osCheckbox" checked>
+              <label class="toggle-slider round" for="osCheckbox"></label>
+            </div>
+          </div>
+          <div class="toggle-switch-item">
+            <div class="toggle-switch-label">Screen Width</div>
+            <div class="toggle-switch">
+              <input type="checkbox" id="screenWidthCheckbox" checked>
+              <label class="toggle-slider round" for="screenWidthCheckbox"></label>
+            </div>
+          </div>
+          <div class="toggle-switch-item">
+            <div class="toggle-switch-label">Screen Height</div>
+            <div class="toggle-switch">
+              <input type="checkbox" id="screenHeightCheckbox" checked>
+              <label class="toggle-slider round" for="screenHeightCheckbox"></label>
+            </div>
+          </div>
+        </div>
+        <button id="saveChangesButton" class="button">Save changes</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/script/functions.js"></script>
+  <script src="./assets/script/app.js"></script>
+</body>
+</html>
